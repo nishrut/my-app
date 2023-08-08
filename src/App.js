@@ -38,7 +38,7 @@ function App() {
 
   const deleteUserHandler = (id) => {
     setIDtoDelete(id);
-    const elementToDelete = usersList.find((user) => user.id == id);
+    const elementToDelete = usersList.find((user) => user.id === id);
     setDeleteMessage({
       title: "You want to delete below entry?",
       message: `${elementToDelete.name} (${elementToDelete.age} years old)`,
